@@ -290,9 +290,10 @@ nav {
   flex-direction: row;
   gap: 4px;
   padding: 0 2vw;
+  align-items: center;
 }
 
-#sec3heading #circle {
+#sec3heading #headingcircle {
   background-color: #fe3f0a;
   height: .5em;
   width: .5em;
@@ -349,13 +350,13 @@ nav {
   text-align: right;
 }
 
-#description h2 {
+.element #details #description h2 {
   font-family: neue-medium;
   font-size: 1em;
   font-weight: 500;
 }
 
-#description p {
+.element #details #description p {
   font-family: neue-medium;
   font-size: .875em;
   opacity: .7;

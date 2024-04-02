@@ -39,6 +39,7 @@ html, body {
   background-color: #EFEAE3;
   position: relative;
   padding: 0 2vw;
+  overflow: hidden
 }
 
 nav {
@@ -136,7 +137,7 @@ nav {
   width: 46vw;
   height: 36vw;
   right: 0;
-  top: 79vh;
+  top: 72vh;
 }
 
 #hero-1 {
@@ -181,13 +182,14 @@ nav {
 #moving-text {
   overflow-x: auto;
   white-space: nowrap;
+  scrollbar-width: none; 
 }
 
 #moving-text::-webkit-scrollbar {
   display: none;
 }
 
-.con {
+.text-container {
   white-space: nowrap;
   display: inline-block;
   animation-name: move;
@@ -198,13 +200,13 @@ nav {
 
 #moving-text h1 {
   font-size: 9vw;
-  /* background-color: lightblue; */
   display: inline-block;
+  letter-spacing: -0.03em;
 }
 
-#gola {
-  height: 70px;
-  width: 70px;
+#circle {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   display: inline-block;
   background-color: #FE320A;

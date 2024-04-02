@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: neue-roman;
 }
 
 html, body {
@@ -278,7 +277,6 @@ nav {
 #section3 {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
@@ -288,8 +286,9 @@ nav {
 #section3 #sec3heading {
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 12px;
   padding: 0 2vw;
+  padding-bottom: 4rem;
   align-items: center;
 }
 
@@ -297,12 +296,14 @@ nav {
   background-color: #fe3f0a;
   height: .5em;
   width: .5em;
-  border-radius: 99999;
+  border-radius: 8px;
 }
 
 #sec3heading h2 {
   font-size: .875em;
   font-family: neue-light;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .element {
@@ -332,7 +333,7 @@ nav {
 
 .element #details {
   display: flex;
-  justify-content: space-between;
+  gap: 47vw;
   align-items: center;
 }
 
@@ -348,22 +349,69 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: right;
+  font-family: neue-light;
 }
 
 .element #details #description h2 {
-  font-family: neue-medium;
   font-size: 1em;
   font-weight: 500;
 }
 
 .element #details #description p {
-  font-family: neue-medium;
   font-size: .875em;
-  opacity: .7;
-  font-weight: 500;
+  opacity: 0.5;
 }
 
 
+#sec3button {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#sec3button h4 {
+  padding: 10px 20px;
+  border: 1px solid #0000003c;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+#sec3button h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+#sec3button h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#sec3button h4 a {
+  color: #000000bb;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+
+#sec3button h4:hover a {
+  color: #fff;
+}
+
+#sec3button h4:hover svg {
+  color: #fff;
+}
 
 
 

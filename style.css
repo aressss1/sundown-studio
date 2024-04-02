@@ -352,6 +352,7 @@ nav {
   flex-direction: column;
   text-align: right;
   font-family: neue-light;
+  position: relative;
 }
 
 .element #details #description h3 {
@@ -367,8 +368,9 @@ nav {
 #sec3button{
   width: max-content;
   text-transform: uppercase;
-  margin: 3vw;
-  
+  margin-top: 7vw;
+  margin-left: 2vw;
+
 }
 
 #sec3button h4 {

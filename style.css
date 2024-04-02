@@ -364,6 +364,12 @@ nav {
   opacity: 0.5;
 }
 
+#sec3button{
+  width: max-content;
+  text-transform: uppercase;
+  margin: 3vw;
+  
+}
 
 #sec3button h4 {
   padding: 10px 20px;

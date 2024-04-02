@@ -354,7 +354,7 @@ nav {
   font-family: neue-light;
 }
 
-.element #details #description h2 {
+.element #details #description h3 {
   font-size: 1em;
   font-weight: 500;
 }
@@ -364,12 +364,6 @@ nav {
   opacity: 0.5;
 }
 
-
-#sec3button {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-}
 
 #sec3button h4 {
   padding: 10px 20px;

@@ -1,25 +1,25 @@
 @font-face {
-  font-family: neu;
-  src: url(./NeueHaasDisplayMediu.ttf);
+  font-family: neue-medium;
+  src: url(./fonts/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
-  font-family: neu;
+  font-family: neue-light;
   font-weight: 100;
-  src: url(./NeueHaasDisplayLight.ttf);
+  src: url(./fonts/NeueHaasDisplayLight.ttf);
 }
 
 @font-face {
-  font-family: neu;
+  font-family: neue-roman;
   font-weight: 200;
-  src: url(./NeueHaasDisplayRoman.ttf);
+  src: url(./fonts/NeueHaasDisplayRoman.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: neu;
+  font-family: neue-roman;
 }
 
 html, body {
@@ -33,7 +33,7 @@ html, body {
   z-index: 10;
 }
 
-#page1 {
+#section1 {
   min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
@@ -117,15 +117,17 @@ nav h3 {
   width: 25vw;
   font-size: 1.8vw;
   line-height: 2vw;
+  font-family: neue-medium;
 }
 
-#center h1 {
+#right h1 {
   font-size: 10vw;
   text-align: right;
   line-height: 8vw;
+  font-family: neue-medium;
 }
 
-#page1 video {
+#section1 video {
   position: relative;
   border-radius: 30px;
   margin-top: 4vw;
@@ -199,7 +201,7 @@ nav h3 {
   }
 }
 
-#page2 {
+#section2 {
   min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
@@ -250,7 +252,7 @@ nav h3 {
   }
 }
 
-#page2-bottom {
+#section2-bottom {
   height: 80vh;
   width: 100%;
   /* background-color: aliceblue; */
@@ -262,7 +264,7 @@ nav h3 {
   z-index: 9;
 }
 
-#page2-bottom h1 {
+#section2-bottom h1 {
   font-size: 4vw;
   width: 60%;
   line-height: 4vw;
@@ -284,7 +286,7 @@ nav h3 {
   font-size: 1vw;
 }
 
-#page2 #gooey {
+#section2 #gooey {
   height: 32vw;
   width: 32vw;
   position: absolute;
@@ -319,7 +321,7 @@ nav h3 {
 
 
 
-#page3 {
+#section3 {
   min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
@@ -374,7 +376,7 @@ nav h3 {
   background-position: center;
 }
 
-#page4 {
+#section4 {
   height: 70vh;
   width: 100%;
   background-color: #EFEAE3;
@@ -450,7 +452,7 @@ nav h3 {
 
 @media (max-width:600px) {
 
-  #page1 {
+  #section1 {
       min-height: 100vh;
       width: 100vw;
       padding: 0 0vw;
@@ -508,7 +510,7 @@ nav h3 {
       line-height: 15vw;
   }
 
-  #page1 video {
+  #section1 video {
       position: relative;
       border-radius: 15px;
       margin-top: 4vw;
@@ -519,7 +521,7 @@ nav h3 {
       margin-left: 4%;
   }
 
-  #page2 {
+  #section2 {
       min-height: 100vh;
       width: 100%;
       background-color: #EFEAE3;
@@ -560,7 +562,7 @@ nav h3 {
       margin: 2vw 2vw;
   }
 
-  #page2-bottom {
+  #section2-bottom {
       height: 90vh;
       width: 100%;
       /* background-color: aliceblue; */
@@ -573,7 +575,7 @@ nav h3 {
       z-index: 9;
   }
 
-  #page2-bottom h1 {
+  #section2-bottom h1 {
       font-size: 8.2vw;
       width: 100%;
       line-height: 9vw;
@@ -595,7 +597,7 @@ nav h3 {
       font-size: 3vw;
   }
 
-  #page2 #gooey {
+  #section2 #gooey {
       height: 62vw;
       width: 62vw;
       position: absolute;

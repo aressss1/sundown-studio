@@ -195,7 +195,7 @@ nav {
 .text-container {
   white-space: nowrap;
   display: inline-block;
-  animation-name: move;
+  animation-name: text-moving;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -214,16 +214,6 @@ nav {
   display: inline-block;
   background-color: #FE320A;
   margin: 1vw 2vw;
-}
-
-@keyframes move {
-  from {
-      transform: translateX(0);
-  }
-
-  to {
-      transform: translateX(-100%);
-  }
 }
 
 #section2-bottom {
@@ -262,19 +252,16 @@ nav {
   font-size: 1.2vw;
 }
 
-#section2 #gooey {
+#section2 #animatedcircle {
   height: 32vw;
   width: 32vw;
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(to top right, #ff2d03, #ff5c0b);
-  /* background: linear-gradient(to top right,red,blue); */
-
-
   top: 58%;
   left: 25%;
   filter: blur(20px);
-  animation-name: gooey;
+  animation-name: circle-animation;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -282,33 +269,45 @@ nav {
 
 }
 
-@keyframes gooey {
-  from {
-      filter: blur(20px);
-      transform: translate(10%, -10%) skew(0);
-  }
-
-  to {
-      filter: blur(30px);
-      transform: translate(-10%, 10%) skew(-12deg);
-  }
-}
 
 
+
+/* SECTION-3 */
 
 
 #section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
   padding: 4vw 0;
 }
 
-.elem {
-  height: 150px;
+#section3 #sec3heading {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 0 2vw;
+}
+
+#sec3heading #circle {
+  background-color: #fe3f0a;
+  height: .5em;
+  width: .5em;
+  border-radius: 99999;
+}
+
+#sec3heading h2 {
+  font-size: .875em;
+  font-family: neue-light;
+}
+
+.element {
+  height: 117px;
   width: 100%;
   position: relative;
-
   border-bottom: 1px solid #38383864;
   overflow: hidden;
   display: flex;
@@ -316,25 +315,54 @@ nav {
   padding: 0 2vw;
 }
 
-.elem h2 {
-  font-size: 3vw;
-  position: relative;
-  z-index: 9;
-}
-
-.elem .overlay {
+.element .overlay {
   height: 100%;
   width: 100%;
-  background-color: orange;
+  background-color: #FF9831;
   position: absolute;
   left: 0;
   top: -100%;
   transition: all ease 0.25s;
 }
 
-.elem:hover .overlay {
+.element:hover .overlay {
   top: 0;
 }
+
+.element #details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element #details h2 {
+  font-size: 3.75vw;
+  position: relative;
+  z-index: 9;
+  font-family: neue-medium;
+  font-weight: normal;
+}
+
+.element #details #description {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#description h2 {
+  font-family: neue-medium;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#description p {
+  font-family: neue-medium;
+  font-size: .875em;
+  opacity: .7;
+  font-weight: 500;
+}
+
+
 
 
 
@@ -502,3 +530,24 @@ nav {
   }
 }
 
+@keyframes text-moving {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes circle-animation {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}

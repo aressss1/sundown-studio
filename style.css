@@ -383,6 +383,7 @@ nav {
   position: relative;
   font-size: 18px;
   overflow: hidden;
+  text-transform: capitalize;
 }
 
 #sec3button h4::after {
@@ -413,9 +414,7 @@ nav {
   color: #fff;
 }
 
-#sec3button h4:hover svg {
-  color: #fff;
-}
+
 
 #fixed-image {
   height: 30vw;
@@ -435,7 +434,7 @@ nav {
 /* SECTION - 4*/
 
 #section4 {
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
   padding: 7vw 10vw;
@@ -534,7 +533,7 @@ nav {
   width: 100%;
   filter: blur(50px);
   animation-name: footer-anime1;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -543,19 +542,17 @@ nav {
 #footer #footer-gradients #gradient-2 {
   position: absolute;
   background-color: #FE320A;
-  top: -202px;
-  right: -282px;
+  top: -258px;
+  right: -300px;
   height: 63%;
-  width: 111%;
+  width: 118%;
   filter: blur(30px);
   animation-name: footer-anime2;
-  animation-duration: 10s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-
 
 #footer #footer-div {
   padding-top: 5rem;

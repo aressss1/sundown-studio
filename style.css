@@ -450,7 +450,6 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 12px;
-  padding: 0 2vw;
   padding-bottom: 4rem;
   align-items: center;
 }
@@ -478,10 +477,11 @@ nav {
 }
 
 .swiper-slide {
-  width: 40%;
+  width: 25%;
   border-left: 1px solid #aeadad;
   padding: 0 2vw;
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   justify-content: space-between;
 }

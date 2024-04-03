@@ -521,7 +521,6 @@ nav {
 }
 
 #footer #footer-gradients {
-  position: relative;
   overflow: hidden;
   z-index: -1;
 }
@@ -529,9 +528,9 @@ nav {
 #footer #footer-gradients #gradient-1 {
   position: absolute;
   top: -11rem;
-  left: -65rem;
+  left: -6rem;
   background-color: #FE320A;
-  height: 60%;
+  height: 73%;
   width: 100%;
   filter: blur(50px);
   animation-name: footer-anime1;
@@ -543,7 +542,7 @@ nav {
 
 #footer #footer-gradients #gradient-2 {
   position: absolute;
-  background-color: blue;
+  background-color: #FE320A;
   top: -202px;
   right: -282px;
   height: 63%;
@@ -563,7 +562,7 @@ nav {
   padding-left: 6vw;
   padding-right: 6vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: left;
 }
 

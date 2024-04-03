@@ -528,11 +528,12 @@ nav {
 
 #footer #footer-gradients #gradient-1 {
   position: absolute;
-  top: 0;
+  top: -11rem;
+  left: -65rem;
   background-color: #FE320A;
-  height: 20%;
-  width: 70%;
-  filter: blur(10px);
+  height: 60%;
+  width: 100%;
+  filter: blur(50px);
   animation-name: footer-anime1;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -542,17 +543,19 @@ nav {
 
 #footer #footer-gradients #gradient-2 {
   position: absolute;
-  top: 0;
   background-color: blue;
-  height: 20%;
-  width: 70%;
-  filter: blur(10px);
+  top: -202px;
+  right: -282px;
+  height: 63%;
+  width: 111%;
+  filter: blur(30px);
   animation-name: footer-anime2;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 
 
 #footer #footer-div {
@@ -712,20 +715,20 @@ nav {
 
 @keyframes footer-anime1 {
   from {
-      transform: rotate(-7deg);
+      transform: rotate(-17deg);
   }
 
   to {
-    transform: rotate(7deg);
+    transform: rotate(-7deg);
   }
 }
 
 @keyframes footer-anime2 {
   from {
-      transform: rotate(-7deg);
+      transform: rotate(35deg);
   }
 
   to {
-    transform: rotate(7deg);
+    transform: rotate(20deg);
   }
 }

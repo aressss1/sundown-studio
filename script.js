@@ -26,8 +26,8 @@ function section4Animation() {
 function swiperAnimation() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 0,
+        // centeredSlides: true,
+        spaceBetween: 100,
     });
 }
 

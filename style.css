@@ -486,8 +486,13 @@ nav {
   justify-content: space-between;
 }
 
+.swiper-slide img {
+  height: 4rem;
+  width: 10rem;
+}
+
 .swiper-slide p {
-  font-family: neue-light;
+  font-family: neue-roman;
 }
 
 #section5 {

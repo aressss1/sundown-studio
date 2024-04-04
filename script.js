@@ -26,7 +26,7 @@ function section4Animation() {
 
             console.log("video" , video)
             
-            video.src = image
+            video.getAttribute('src') = src
         })
     })
 }

@@ -1,10 +1,23 @@
+
+// locomotive initialization
+
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
 
+// Setting z-index for scrolbar (locomotive hack)
+
 document.querySelector(".c-scrollbar").style.zIndex = 99
 
+
+
+function loaderAnimation() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 4200)
+}
 
 function section4Animation() {
     var elemContainer = document.querySelector("#element-container")
@@ -31,7 +44,7 @@ function section4Animation() {
     })
 }
 
-function swiperAnimation() {
+function swiperJsInitialization() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         // centeredSlides: true,
@@ -39,13 +52,9 @@ function swiperAnimation() {
     });
 }
 
-function loaderAnimation() {
-    var loader = document.querySelector("#loader")
-    setTimeout(function () {
-        loader.style.top = "-100%"
-    }, 4200)
-}
 
-swiperAnimation()
-section4Animation()
 loaderAnimation()
+
+section4Animation()
+
+swiperJsInitialization()

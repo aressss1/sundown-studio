@@ -6,22 +6,24 @@ const scroll = new LocomotiveScroll({
 
 function section4Animation() {
     var elemContainer = document.querySelector("#element-container")
-    var video = document.querySelector("#fixed-video")
+    var video = document.querySelector("#fixed-container-video")
     elemContainer.addEventListener("mouseenter", function () {
-        fixed.style.display = "block"
+        elemContainer.style.display = "block"
     })
     elemContainer.addEventListener("mouseleave", function () {
-        fixed.style.display = "none"
+        elemContainer.style.display = "none"
     })
 
     var elems = document.querySelectorAll(".element")
     elems.forEach(function (e) {
         console.log('elems')
         e.addEventListener("mouseenter", function () {
-            console.log('mouseenter')
+            console.log('mouse-Enter')
 
             var src = e.getAttribute("data-video")
+
             console.log(src , "src")
+
             console.log("video" , video)
             
             video.src = image

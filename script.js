@@ -3,6 +3,8 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+document.querySelector(".c-scrollbar").style.zIndex = 99
+
 
 function section4Animation() {
     var elemContainer = document.querySelector("#element-container")

@@ -6,12 +6,14 @@ const scroll = new LocomotiveScroll({
 
 function section4Animation() {
     var elemContainer = document.querySelector("#element-container")
+    var fixedContainer = document.querySelector("#fixed-container")
     var video = document.querySelector("#fixed-container-video")
+
     elemContainer.addEventListener("mouseenter", function () {
-        elemContainer.style.display = "block"
+        fixedContainer.style.display = "block"
     })
     elemContainer.addEventListener("mouseleave", function () {
-        elemContainer.style.display = "none"
+        fixedContainer.style.display = "none"
     })
 
     var elements = document.querySelectorAll(".element")

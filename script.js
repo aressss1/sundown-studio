@@ -5,7 +5,7 @@ const scroll = new LocomotiveScroll({
 
 
 function section4Animation() {
-    var elemC = document.querySelector("#elem-container")
+    var elemC = document.querySelector("#element-container")
     var fixed = document.querySelector("#fixed-image")
     elemC.addEventListener("mouseenter", function () {
         fixed.style.display = "block"
@@ -14,7 +14,7 @@ function section4Animation() {
         fixed.style.display = "none"
     })
 
-    var elems = document.querySelectorAll(".elem")
+    var elems = document.querySelectorAll(".element")
     elems.forEach(function (e) {
         e.addEventListener("mouseenter", function () {
             var image = e.getAttribute("data-image")

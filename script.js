@@ -18,7 +18,11 @@ function section4Animation() {
     elements.forEach(function (e) {
         e.addEventListener("mouseenter", function () {
             var videoSrc = e.getAttribute("data-video")
+            console.log(videoSrc , 'videoSrc')
+            console.log(video , "videoElement")
+            
             video.src = videoSrc
+            console.log(video , "video")
         })
     })
 }

@@ -14,19 +14,11 @@ function section4Animation() {
         elemContainer.style.display = "none"
     })
 
-    var elems = document.querySelectorAll(".element")
-    elems.forEach(function (e) {
-        console.log('elems')
+    var elements = document.querySelectorAll(".element")
+    elements.forEach(function (e) {
         e.addEventListener("mouseenter", function () {
-            console.log('mouse-Enter')
-
-            var src = e.getAttribute("data-video")
-
-            console.log(src , "src")
-
-            console.log("video" , video)
-            
-            video.getAttribute('src') = src
+            var videoSrc = e.getAttribute("data-video")
+            video.src = videoSrc
         })
     })
 }

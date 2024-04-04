@@ -5,13 +5,11 @@
 
 @font-face {
   font-family: neue-light;
-  font-weight: 100;
   src: url(./fonts/NeueHaasDisplayLight.ttf);
 }
 
 @font-face {
   font-family: neue-roman;
-  font-weight: 200;
   src: url(./fonts/NeueHaasDisplayRoman.ttf);
 }
 
@@ -45,6 +43,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: neue-medium
 }
 
 #loader h1{
@@ -96,7 +95,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 1vw;
-  font-family: neue-roman;
   font-family: normal;
 }
 
@@ -110,6 +108,7 @@ nav {
   position: relative;
   font-size: 18px;
   overflow: hidden;
+  font-family: neue-roman;
 }
 
 #nav-part2 h4::after {
@@ -486,7 +485,7 @@ nav {
 /* SECTION - 4*/
 
 #section4 {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   background-color: #EFEAE3;
   padding: 7vw 10vw;

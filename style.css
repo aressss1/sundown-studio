@@ -56,7 +56,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 1vw;
-  font-family: neue-medium;
+  font-family: neue-roman;
+  font-family: normal;
 }
 
 #nav-part2 h4 {
@@ -113,7 +114,8 @@ nav {
 #left h3 {
   width: 26vw;
   font-size: 1.8vw;
-  line-height: 2vw;
+  line-height: 1;
+  letter-spacing: -.03em;
   font-family: neue-medium;
   font-weight: 500;
 }
@@ -123,6 +125,7 @@ nav {
   text-align: right;
   line-height: 8vw;
   font-family: neue-medium;
+  letter-spacing: -.03em;
 }
 
 #section1 video {
@@ -227,6 +230,7 @@ nav {
   justify-content: space-between;
   position: relative;
   z-index: 9;
+  font-family: neue-light;
 }
 
 #section2-bottom h1 {
@@ -234,6 +238,7 @@ nav {
   width: 60%;
   line-height: 4.25vw;
   font-family: neue-medium;
+  letter-spacing: -.03em;
 }
 
 #bottom-part2 {
@@ -250,6 +255,7 @@ nav {
   font-weight: 200;
   margin-top: 2.7vw;
   font-size: 1.2vw;
+  line-height: 1.4;
 }
 
 #section2 #animatedcircle {
@@ -268,7 +274,6 @@ nav {
   animation-timing-function: ease-in-out;
 
 }
-
 
 
 
@@ -345,6 +350,7 @@ nav {
   z-index: 9;
   font-family: neue-medium;
   font-weight: normal;
+  letter-spacing: -.03em
 }
 
 .element #details #description {
@@ -370,6 +376,7 @@ nav {
   text-transform: uppercase;
   margin-top: 7vw;
   margin-left: 2vw;
+  font-family: neue-roman;
 
 }
 
@@ -601,9 +608,9 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: neue-light;
+  font-family: neue-roman;
   font-weight: normal;
-  
+  font-size: 1em;
 }
 
 #footer-bottom h3 {

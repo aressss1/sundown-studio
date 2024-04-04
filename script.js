@@ -5,19 +5,25 @@ const scroll = new LocomotiveScroll({
 
 
 function section4Animation() {
-    var elemC = document.querySelector("#element-container")
+    var elemContainer = document.querySelector("#element-container")
     var video = document.querySelector("#fixed-video")
-    elemC.addEventListener("mouseenter", function () {
+    elemContainer.addEventListener("mouseenter", function () {
         fixed.style.display = "block"
     })
-    elemC.addEventListener("mouseleave", function () {
+    elemContainer.addEventListener("mouseleave", function () {
         fixed.style.display = "none"
     })
 
     var elems = document.querySelectorAll(".element")
     elems.forEach(function (e) {
+        console.log('elems')
         e.addEventListener("mouseenter", function () {
-            var image = e.getAttribute("data-video")
+            console.log('mouseenter')
+
+            var src = e.getAttribute("data-video")
+            console.log(src , "src")
+            console.log("video" , video)
+            
             video.src = image
         })
     })
